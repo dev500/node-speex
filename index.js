@@ -1,7 +1,7 @@
 const os = require('os')
-const speex = require(`./lib/${os.platform()}-speex`);
+const Speex = require('bindings')('Speex.node');
 
-module.exports = speex;
+module.exports = Speex;
 
 module.exports.NARROW_BAND = 0;
 module.exports.WIDE_BAND = 1;
